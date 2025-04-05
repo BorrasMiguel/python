@@ -11,6 +11,6 @@ age = int(age)
 print(f"Dentro de 20 años tendras {age + 20} años")
 
 print("Obtener multiples valores a la vez")
-country, city = input("En que país y ciudad vives").split()
+country, city = input("En que país y ciudad vives\n").split()
 
 print(f"Vives en {country} {city}")

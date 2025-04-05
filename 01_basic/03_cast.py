@@ -1,7 +1,7 @@
 # casting de types
 # transforma un tipo de valor a otro
 
-print("Conversi´pon de tipos")
+print("Conversipon de tipos")
 
 # print("100" + 2)
 print(type(int("100")))
