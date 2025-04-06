@@ -39,7 +39,7 @@ lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 print(lista1[2:4]) # [3, 4]
 print(lista1[:3]) # [1, 2, 3]
 print(lista1[3:]) # [3, 4, 5]
-print(lista1[:]) # Te devuelvr una copia
+print(lista1[:]) # Te devuelve una copia
 
 # Más
 print(lista1[0:9:2]) # El último número nos indica el paso 
