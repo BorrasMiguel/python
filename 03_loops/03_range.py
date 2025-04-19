@@ -57,3 +57,14 @@ print("\nEjercicio 6:")
 numero = int(input("Introduce un número para la tabla de multiplicar: "))
 for i in range(1, 11):
   print(f"{numero} x {i} = {numero * i}")
+
+
+# Crear una lista a partir de range, porque range no crea listas
+nums = range(10)
+list_of_nums = list(nums)
+print(list_of_nums)
+
+# Repetir una acción un numero determinado de veces
+for _ in range(5):
+    print('Hacer 5 veces algo')
+
