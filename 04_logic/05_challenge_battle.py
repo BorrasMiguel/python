@@ -42,6 +42,39 @@ if system("clear") != 0: system("cls")
 # Algoritmos ocultos o cálculos o fórmulas
 # Programación dinámica: buscar una solución mas eficiente
 
+# def battle(lista_a, lista_b):
+#     for i in range(len(lista_a)):
+#         a = lista_a[i]
+#         b = lista_b[i]
+
+#         if a > b:
+#             diff = a - b
+#             if i + 1 < len(lista_a):
+#                 lista_a[i + 1] += diff
+        
+#         elif a < b:
+#             diff = b - a
+#             if i + 1 < len(lista_b):
+#                 lista_b[i + 1] += diff
+        
+#         elif a == b:
+#             lista_a[i] = None
+#             lista_b[i] = None
+    
+#         # Resultado final
+#     if lista_a and not lista_b:
+#         return str(lista_a[0]) + "a"
+#     elif lista_b and not lista_a:
+#         return str(lista_b[0]) + "b"
+#     else:
+#         return "x"
+
+# lista_a = [2, 4, 2]
+# lista_b = [3, 3, 4]
+
+# resultado = print(battle(lista_a, lista_b))
+
+
 def battle(lista_a, lista_b):
     puntos_a = sum(lista_a)
     puntos_b = sum(lista_b)
