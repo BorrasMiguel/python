@@ -115,7 +115,7 @@ else:
 # de los ficheros con extensión .txt
 
 files = "file1.txt file2.pdf midu-of.webp secret.txt"
-name_files = r'\w+.txt$'
+name_files = r'\b[\w\d._%]+\.txt\b'
 result = re.findall(name_files, files)
 
 print(result)
@@ -131,4 +131,41 @@ text = "platano, manzana, aguacate, palta, pera"
 pattern = r"palta|aguacate|p..a"
 
 matches = re.findall(pattern, text)
+print(matches)
+
+# ?: Cero o una vez
+text = "aaabacb"
+pattern = "a?b" # En el caso de que exista antes de una b una a, quiero que me la devuelvas
+matches = re.findall(pattern, text)
+print(matches)
+
+# Ejercicio
+# Haz opcional que aparezca un  +34 en el siguiente texto
+phone = "+34 699888555"
+pattern = r'\+?|34 \d{9}' 
+matches = re.findall(pattern, phone)
+print(matches)
+
+# {n}: Exactamente n veces
+text = "aaaaaa      aa        aaaa"
+pattern = "a{3}"
+matches = re.findall(pattern, text)
+print(matches)
+
+# {n, m}: De n a m veces
+text  = "u uu uuu u"
+pattern = "u{2,3}"
+matches = re.findall(pattern, text)
+print(matches)
+
+# Ejercicio: Encientra las palabras de mas de 4 a 6 letras
+words = "ala casa árbol león cinco murcielago"
+pattern = r"\b\w{5,6}\b"  # \b: detecta las palabras
+matches = re.findall(pattern, words)
+print(matches)
+
+# Ejercicio: Encuentra las palabras de mas de 6 letras
+words = "ala fantástico casa árbol león cinco murcielago"
+pattern = r"\b\w{6,}\b"  # \b: detecta las palabras
+matches = re.findall(pattern, words)
 print(matches)
